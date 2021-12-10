@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Final Project</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../css/portal.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
+ </head>
+ <body style="background-color:rgb(75, 167, 39)">
+     <header>
+      <a class='topheader' href='template.html'>
+        <h1>Liberty Landscaping</h1>
+       </a>
+     <nav class="topnav" id="myTopnav">
+       <a href="template.html" class="active">Home</a>
+       <a href="aboutus.html">About Us</a>
+       <a href="services.html">Services</a>
+       <a href="gallery.html">Gallery</a>
+       <a href='contactus.php'>Contact Us</a>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+     </nav>
+     </header>
+     
+   <div class="wrapper">
+
+     <a href='template.html'>
+     <img class="desktop" src="http://via.placeholder.com/300" alt="Photo of Projects" /> 
+     <img class="tablet" src="http://via.placeholder.com/250" alt="Photo of Project" />
+     <img class="phone" src="http://via.placeholder.com/150" alt="Photo of Projects" />
+     </a>
+       
+       <h2 class="subheader">Pictures of our work</h2>
+       
+       <p> Waiting on pictures </p>
+        <p><i>Always friendly, always affordable, always green</i> </p>
+       
+     <footer>
+      <p><small>&copy; 2021 by 
+          <a href="contact.php" target='blank'></a> Nicholas Novick, All Rights Reserved ~ 
+          <a id="html-checker" href="#">Check HTML</a> ~ 
+          <a href="https://validator.w3.org/nu/?doc=http://web-students.net/site102/it161/test.html">Check CSS</a> ~ 
+          <a href='https://scedu-my.sharepoint.com/:w:/g/personal/nicholas_novick_seattlecolleges_edu/EfE3CqsUYHFDvrVQNM_xHHcBiQy3CQKa_PepAQLO-DroDA?e=puBKE3'>Disclaimer</a></small>
+     </p>
+    </footer>
+  </div>
+     
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+  <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);  
+    
+    //manages mobile nav 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }   
+ </script>
+     
+ </body>
+</html>
